@@ -8,6 +8,8 @@ Workflow to generate alma mashup css using Gulp/SCSS
 
 ## Tasks
 - `gulp` - default task will process scss files into css and then create `skin.zip` archive under `dist`. This is ready to upload to Alma back office. 
+- `gulp styles` - will process and compress scss stylesheets into `branding_skin/css/mashup_new.css`.
+- `gulp zip` - will take whatever is in `branding_skin` and zip it into `skin.zip` under `dist`.
 
 ## Notes
 This project was done for the PCC Primo New UI launch. It may or may not work in other cases. 
