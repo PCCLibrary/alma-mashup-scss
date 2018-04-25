@@ -16,7 +16,12 @@ gulp.task('styles', function(){
 
 
 gulp.task('zip', function() {
-    gulp.src('branding_skin/*')
+    gulp.src(
+        [
+            './branding_skin/**/*'
+        ], {base: '.'}
+    )
+
         .pipe(zip('skin.zip'))
         .pipe(gulp.dest('dist'))
 });
