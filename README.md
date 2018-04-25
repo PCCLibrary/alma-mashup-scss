@@ -1,5 +1,11 @@
 # alma-mashup-scss
-Workflow to generate alma mashup css using Gulp/SCSS
+Workflow to generate alma mashup css using Gulp/SCSS for use with Primo NUI.
+
+## Install
+- Navigate inside the local copy of the repo.
+- Run `npm install`
+
+Requires gulp & node-sass. 
 
 ## Instructions
 - Copy selector from /src/css stylesheet. 
