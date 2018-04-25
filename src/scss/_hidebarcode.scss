@@ -1,0 +1,12 @@
+/*Hide the barcode for Alma-P*/
+
+.itemsList {
+  #TABLE_DATA_item_list {
+    th:first-of-type, td:first-of-type {
+      display: none !important;
+    }
+  }
+  table thead th:first-child {
+    display: none;
+  }
+}

@@ -1,9 +1,11 @@
 {
   "name": "alma-mashup-scss",
-  "version": ".1",
+  "version": "1.0.0",
   "description": "Gulp/scss workflow for generating Alma Mashup skin",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "gulp-zip": "^4.1.0"
-  }
+  },
+  "dependencies": {}
 }

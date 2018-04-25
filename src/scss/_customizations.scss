@@ -1,0 +1,271 @@
+.iframeHeaderContent {
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  margin: .5em 0 !important;
+  padding-left: 0 !important;
+  >em {
+    display: none !important;
+  }
+  .requestOption {
+    &:first-of-type {
+      padding-left: auto;
+    }
+  }
+}
+
+.iframeHeader {
+  input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $font_family;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    padding: 0.85em 1em !important;
+    border: 1px solid transparent;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: $bg-lt-blue;
+    color: $white;
+    border-radius: 4px;
+    margin: 1em 0 !important;
+    text-decoration: none;
+    &:hover {
+      background-color: $bg-dk-blue;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+#formActionsContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding: 1em;
+  input {
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $font_family;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    padding: 0.85em 1em !important;
+    border: 1px solid transparent;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem !important;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: $bg-lt-blue;
+    color: $white;
+    border-radius: 4px;
+    margin: 0 !important;
+    text-decoration: none;
+    text-transform: none !important;
+  }
+  input[type="submit"] {
+    background-color: $bg-lt-blue;
+    color: $white;
+    &:hover {
+      background-color: $bg-dk-blue;
+      color: $white;
+    }
+  }
+}
+.getitNoHoldings {
+  .requestOptionNoHoldings {
+    input.submitAsLink {
+      box-shadow: none !important;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      display: inline-block;
+      vertical-align: middle;
+      font-family: $font_family;
+      font-weight: 400 !important;
+      font-style: normal !important;
+      padding: 0.85em 1em !important;
+      border: 1px solid transparent;
+      transition: background-color 0.25s ease-out, color 0.25s ease-out;
+      font-size: 0.9rem !important;
+      line-height: 1;
+      text-align: center;
+      cursor: pointer;
+      background-color: $bg-lt-blue;
+      color: $white;
+      border-radius: 4px;
+      text-decoration: none;
+      text-transform: none !important;
+      margin: .5em 0 !important;
+    }
+    &:after {
+      content: none !important;
+    }
+  }
+}
+.actionsInputButtons {
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $font_family;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  padding: 0.85em 1em !important;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem !important;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: $bg-lt-blue;
+  color: $white;
+  border-radius: 4px;
+  margin: 0 !important;
+  text-decoration: none;
+  text-transform: none !important;
+}
+#submitILLRequest {
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $font_family;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  padding: 0.85em 1em !important;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem !important;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: $bg-lt-blue;
+  color: $white;
+  border-radius: 4px;
+  margin: 0 !important;
+  text-decoration: none;
+  text-transform: none !important;
+}
+#submitPurchaseRequest {
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $font_family;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  padding: 0.85em 1em !important;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem !important;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: $bg-lt-blue;
+  color: $white;
+  border-radius: 4px;
+  margin: 0 !important;
+  text-decoration: none;
+  text-transform: none !important;
+}
+#exlidRequestTabFormSubmit {
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $font_family;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  padding: 0.85em 1em !important;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem !important;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: $bg-lt-blue;
+  color: $white;
+  border-radius: 4px;
+  margin: 0 !important;
+  text-decoration: none;
+  text-transform: none !important;
+}
+.actionsInputButtons[type="submit"] {
+  background-color: $bg-lt-blue;
+  color: $white;
+  &:hover {
+    background-color: $bg-dk-blue;
+    color: $white;
+  }
+}
+[type="submit"]#submitILLRequest {
+  background-color: $bg-lt-blue;
+  color: $white;
+  &:hover {
+    background-color: $bg-dk-blue;
+    color: $white;
+  }
+}
+[type="submit"]#submitPurchaseRequest {
+  background-color: $bg-lt-blue;
+  color: $white;
+  &:hover {
+    background-color: $bg-dk-blue;
+    color: $white;
+  }
+}
+[type="submit"]#exlidRequestTabFormSubmit {
+  background-color: $bg-lt-blue;
+  color: $white;
+  &:hover {
+    background-color: $bg-dk-blue;
+    color: $white;
+  }
+}
+.resetContainer {
+  a {
+    background-color: $bg-silver;
+    color: $gray-md;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 0.9rem !important;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    text-transform: none !important;
+    &:hover {
+      background-color: $bg-lt-gray;
+      color: $gray-dk;
+    }
+  }
+}
