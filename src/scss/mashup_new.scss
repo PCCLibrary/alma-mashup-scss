@@ -5,5 +5,10 @@ Master stylesheet for Alma Mashup CSS file
 *******************************/
 
 @import "variables";
+@import "mixins";
+@import "normalize";
+
+@import "sassy-inputs/sass/main";
+
 @import "customizations";
 @import "hidebarcode";

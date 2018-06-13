@@ -1,0 +1,38 @@
+.requestForm li input:not([readonly]),
+.requestForm li textarea:not([readonly]),
+.requestForm li select:not([readonly]),
+.purchaseRequest li input:not([readonly]),
+.purchaseRequest li textarea:not([readonly]),
+.purchaseRequest li select:not([readonly]),
+.requestForm li input:not([readonly]):focus,
+.requestForm li input:not([readonly]):active,
+.requestForm li textarea:not([readonly]):focus,
+.requestForm li textarea:not([readonly]):active,
+.requestForm li select:not([readonly]):focus,
+.requestForm li select:not([readonly]):active,
+.purchaseRequest li input:not([readonly]):focus,
+.purchaseRequest li input:not([readonly]):active,
+.purchaseRequest li textarea:not([readonly]):focus,
+.purchaseRequest li textarea:not([readonly]):active,
+.purchaseRequest li select:not([readonly]):focus,
+.purchaseRequest li select:not([readonly]):active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.requestForm,
+.purchaseRequest {
+  .width72:after {
+    content: none;
+    //display: table;
+    //width: 100%;
+    //height: 7px;
+  }
+}
+
+.requestForm,
+.purchaseRequest {
+  #commentInput {
+    min-width: inherit !important;
+  }
+}

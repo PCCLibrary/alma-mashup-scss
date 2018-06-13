@@ -1,0 +1,186 @@
+// media queries
+
+@mixin xs {
+  @media only screen and (min-width: $break-xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media only screen and (min-width: $break-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (min-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (min-width: $break-lg) {
+    @content;
+  }
+}
+
+@mixin hover {
+  &:hover,
+  &:active,
+  &:focus,
+  &:hover:not([disabled]),
+  &:active:not([disabled]),
+  &:focus:not([disabled]) {
+    @content;
+  }
+  &:visited {
+    color: $color_dark_blue;
+  }
+}
+
+@mixin button-style($background: $color_teal, $text: $white) {
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $font_family;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  padding: 0.85em 1em !important;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem !important;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: $background;
+  color: $text;
+  border-radius: 4px;
+  margin: 0 !important;
+  text-decoration: none;
+  text-transform: none !important;
+  white-space: normal;
+  @include hover {
+    background-color: darken($background, 20%);
+    color: $text;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    text-decoration: none;
+  }
+
+}
+
+%forminput {
+
+  box-shadow: none !important;
+  outline: none !important;
+  padding: .5em !important;
+  font-size: .9em !important;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: $font_family;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  border: 1px solid $color_dark_gray !important;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  line-height: 1;
+  text-align: left;
+  cursor: pointer;
+  background-color: $white;
+  color: $color_dark_gray;
+  margin: 0 !important;
+  text-decoration: none;
+  text-transform: none !important;
+}
+
+%formgrid {
+
+  ul.internalSection {
+    padding: 0;
+    max-width: 100%;
+
+    @include sm {
+      max-width: 768px;
+    }
+
+    li {
+      height: auto !important;
+      margin: 0 0 .5em 0;
+      text-align: left;
+      clear: left;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      float: none;
+
+      &.nextLine {
+        clear: left !important;
+      }
+
+      &.width24,
+      &.width72 {
+        &:not(#formActionsContainer) {
+          width: 100% !important;
+          display: block;
+        }
+        width: 100%;
+        display: block;
+      }
+
+      &#formActionsContainer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex !important;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        padding: 1em 0 !important;
+        width: inherit;
+        justify-content: space-between;
+
+        @include sm {
+
+          padding: 1em 2em 1em 1em !important;
+          max-width: 768px !important;
+          width: 100% !important;
+          display: flex !important;
+          justify-content: space-between;
+
+        }
+
+      }
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      @include sm {
+        float: left;
+        clear: initial;
+        justify-content: flex-start;
+        text-align: left;
+        margin: 0 0 .5em 0;
+
+        &.width24 {
+          width: 24% !important;
+          display: inline-block;
+        }
+        &.width72 {
+          width: 72% !important;
+          display: inline-block;
+        }
+
+      }
+
+    }
+
+  }
+
+}

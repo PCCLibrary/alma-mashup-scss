@@ -1,6 +1,6 @@
 'use strict';
 
-const gulp = require('gulp'),
+var gulp = require('gulp'),
       sass = require('gulp-sass'),
       zip = require('gulp-zip');
 
@@ -10,6 +10,7 @@ var scssFiles = 'src/scss/**/*.scss',
 
 gulp.task('styles', function(){
     gulp.src(scssFiles)
+        .pipe(sass({includePaths: ['node_modules/']}))
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest(cssDest));
 });
